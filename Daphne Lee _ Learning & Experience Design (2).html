@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daphne Lee | Learning &amp; Experience Design</title>
+<style>
+:root{--bg:#faf7f2;--ink:#1a1a1a;--muted:#6b6459;--line:#e2d9c9;--card:#fff;--beige:#efe6d8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Iowan Old Style",Palatino,serif;font-size:18px;line-height:1.7}
+main,nav{max-width:720px;margin:0 auto;padding:0 24px}
+a{color:var(--ink);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding-top:26px;font-family:Arial,Helvetica,sans-serif;font-size:.92rem}
+nav b{margin-right:auto}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.hero{padding:70px 0 80px;text-align:center}
+.orb{width:150px;height:150px;border-radius:50%;background:var(--beige);border:1.5px solid var(--ink);margin:0 auto 44px;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(.72)}50%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none}}
+h1{font-size:clamp(2.2rem,8vw,3.8rem);font-weight:400;line-height:1.1;margin:0 0 22px;letter-spacing:-.02em}
+.hero p{max-width:46ch;margin:0 auto;color:var(--muted)}
+.btn{display:inline-block;margin-top:24px;font-family:Arial,Helvetica,sans-serif;font-size:.95rem;font-weight:700;background:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:9px 22px;color:var(--bg);text-decoration:none}
+.btn:hover{opacity:.8}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:2rem;font-weight:400;margin:0 0 24px;line-height:1.2}
+.need{padding:16px 0;border-bottom:1px solid var(--line)}
+.need b{font-weight:400;font-size:1.2rem;display:block}
+.need span{color:var(--muted);font-size:1rem}
+.learn{margin-top:22px;font-size:1rem;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 14px}
+summary{cursor:pointer;list-style:none;padding:18px 22px}
+summary::-webkit-details-marker{display:none}
+summary small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:.8rem;color:var(--muted)}
+summary b{font-weight:400;font-size:1.25rem}
+summary::after{content:"Read";float:right;font-family:Arial,Helvetica,sans-serif;font-size:.85rem;font-weight:700;text-decoration:underline}
+details[open] summary::after{content:"Close"}
+.body{padding:0 22px 20px;font-size:1rem;line-height:1.65}
+.body h3{font-family:Arial,Helvetica,sans-serif;font-size:.9rem;margin:16px 0 4px}
+.body p{margin:0 0 6px}
+.body ul{margin:0;padding-left:20px}
+.row{padding:12px 0;border-bottom:1px solid var(--line);font-size:1rem}
+.row b{font-weight:400;font-size:1.1rem}
+.row span{display:block;color:var(--muted);font-size:.92rem}.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:10px 0 12px;align-items:start}.ba .src{background:var(--beige);border-radius:12px;padding:14px 16px;font-size:.95rem}.ba .src b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.ba figure{margin:0}.ba img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}.ba figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><b>Daphne Lee</b><a href="#bring">What I bring</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+<main>
+
+<div class="hero">
+<div class="orb" aria-hidden="true"></div>
+<h1>Turning information into meaningful experiences.</h1>
+<p>I make complex information clear, structured and easy to learn. Civil engineering and sustainability background, now building a practice in learning and experience design.</p>
+<a class="btn" href="#work">See the work</a>
+</div>
+
+<section id="bring">
+<h2>What I can bring</h2>
+<div class="need"><b>Complex material made clear</b><span>Research, organising and plain-language explaining, from years of working with technical requirements and reports.</span></div>
+<div class="need"><b>Learning with a path</b><span>Content shaped as hook, explain, apply, recap and act, written from the learner’s point of view.</span></div>
+<div class="need"><b>Visuals that carry the message</b><span>Infographics and carousels with clear hierarchy, made in Canva to a brand guideline.</span></div>
+<div class="need"><b>Simple digital learning pieces</b><span>Interactive browser pages in HTML, CSS and JavaScript, built with AI assistance.</span></div>
+<p class="learn">Learning now: how people learn and remember, how to design learning that works, and how to use AI as a helper while keeping human judgement in charge.</p>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+
+<details open>
+<summary><small>Personal project</small><b>Breathing practices in the browser</b></summary>
+<div class="body">
+<p>Two guided pages, <a href="https://daphneinyoga.com/practices/box-breathing.html" target="_blank" rel="noopener">Box Breathing</a> and <a href="https://daphneinyoga.com/practices/437-breathing.html" target="_blank" rel="noopener">4-3-7 Breathing</a>, for beginners who want to try a practice without an app.</p>
+<h3>Design decisions</h3>
+<ul><li>Short, clear instructions before starting.</li><li>Customisable durations, so people go at their own pace.</li><li>Visual pacing for each phase.</li><li>A minimal, calm interface.</li></ul>
+
+</div>
+</details>
+
+<details>
+<summary><small>Volunteer, ProjekWaste</small><b>Why should we care about COP31?</b></summary>
+<div class="body">
+<p>A 7-slide Instagram carousel from a title-only brief. I turned UNFCCC material, full of institutional language and policy detail, into plain-language content in Canva.</p>
+<h3>Who it’s for</h3>
+<p>A broad, non-specialist audience with little or no prior knowledge of COP31 or climate policy. So I used plain language, cut technical terms, split the content into short sections and linked an international event to everyday life.</p>
+<h3>From the source to the slides</h3>
+<p>Source: <a href="https://unfccc.int/cop31/about" target="_blank" rel="noopener">UNFCCC, About COP31</a>. Its overview centres on putting climate solutions into practice and the global energy transition. Instead of listing technical priorities, I organised the content into three stages: global discussions, national responses and everyday impact.</p>
+<h3>Before and after: slide 4</h3>
+<div class="ba">
+<div class="src"><b>Source idea (paraphrased)</b><p>The UNFCCC describes COP as where countries agree actions on limiting warming, adapting to climate impacts and moving away from fossil fuels. Negotiations cover adaptation, emissions, climate finance and a just transition, alongside a Climate Action Agenda that brings in businesses, cities and civil society.</p></div>
+<div class="src"><b>Slide 4, in words</b><p>Three stacked levels linked by arrows: global level, national level and everyday life. The last level covers energy, resources, cities and climate resilience, so the reader sees how a conference decision reaches daily life.</p></div>
+</div>
+<p>What changed: a list of negotiation topics became a three-step path from global decisions to national policy to everyday life. The national and everyday-life steps are my own framing, added to help readers relate.</p>
+<h3>What I left out</h3>
+<p>Negotiation mechanisms, technical policy detail, institutional terminology and the Climate Action Agenda track, so the focus stays on how international decisions connect to people’s lives.</p>
+<h3>The aim</h3>
+<p>To move readers from knowing what COP31 is to asking why it matters.</p>
+<p><a href="https://www.instagram.com/p/Dflr8TAGc1c/" target="_blank" rel="noopener">View the published post on Instagram</a></p>
+<h3>Path</h3>
+<p>Hook, define, explain, connect global to everyday life, localise to Malaysia, relate, act.</p>
+
+</div>
+</details>
+
+
+</section>
+
+<section id="background">
+<h2>Background</h2>
+<div class="row"><b>ESD Designer / Engineer, BSD Consultancy</b><span>February 2025 to September 2026</span></div>
+<div class="row"><b>Green Building Assistant Consultant, Allied Environmental Consultants</b><span>November 2023 to February 2025</span></div>
+<div class="row"><b>Volunteer media team, ProjekWaste</b></div>
+<div class="row"><b>BEng Civil Engineering, Harbin Institute of Technology</b><span>GPA 3.76/4.0</span></div>
+</section>
+
+<section id="contact">
+<h2>Let’s talk</h2>
+<p>Open to junior learning and experience design, digital learning content and visual communication roles, and to freelance educational content.</p>
+<a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+</section>
+
+<footer>© Daphne Lee. A work in progress.</footer>
+</main>
+</body>
+</html>
