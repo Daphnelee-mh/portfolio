@@ -44,12 +44,13 @@ details[open] summary::after{content:"Close"}
 .body ul{margin:0;padding-left:20px}
 .row{padding:12px 0;border-bottom:1px solid var(--line);font-size:1rem}
 .row b{font-weight:400;font-size:1.1rem}
-.row span{display:block;color:var(--muted);font-size:.92rem}.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:10px 0 12px;align-items:start}.ba .src{background:var(--beige);border-radius:12px;padding:14px 16px;font-size:.95rem}.ba .src b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.ba figure{margin:0}.ba img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}.ba figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+.row span{display:block;color:var(--muted);font-size:.92rem}.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:10px 0 12px;align-items:start}.ba .src{background:var(--beige);border-radius:12px;padding:14px 16px;font-size:.95rem}.ba .src b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.ba figure{margin:0}.ba img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}.ba figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}.th{margin:30px 0 0}.th b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.th span{display:block;font-style:italic;color:var(--muted);font-size:1rem}
+.belief h2{font-size:clamp(1.5rem,4.5vw,2rem);max-width:24ch;margin-bottom:28px}.dims{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.dim{border:1.5px solid var(--ink);border-radius:16px;padding:20px 18px;background:var(--card)}.dim.d2{background:var(--beige)}.dim.d3{background:var(--ink);color:var(--bg)}.dim .n{display:inline-block;width:28px;height:28px;line-height:25px;text-align:center;border:1.5px solid currentColor;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.85rem;margin-bottom:10px}.dim b{display:block;font-weight:400;font-size:1.2rem;line-height:1.3;margin-bottom:6px}.dim p{margin:0;font-size:1rem;line-height:1.55}.scale{display:flex;align-items:center;gap:12px;margin:14px 2px 26px;font-family:Arial,Helvetica,sans-serif;font-size:.8rem;color:var(--muted)}.scale i{flex:1;border-top:1.5px solid var(--ink)}.belief-line{font-style:italic;color:var(--muted);max-width:52ch;margin:0}
 footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;text-align:center}
 </style>
 </head>
 <body>
-<nav aria-label="Main"><b>Daphne Lee</b><a href="#bring">What I bring</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Main"><b>Daphne Lee</b><a href="#belief">How I think</a><a href="#bring">What I bring</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
 <main>
 
 <div class="hero">
@@ -59,13 +60,29 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <a class="btn" href="#work">See the work</a>
 </div>
 
+<section id="belief" class="belief">
+<h2>Is learning only about knowing, or about becoming aware enough to do something differently?</h2>
+<div class="dims">
+<div class="dim d1"><span class="n">1</span><b>Cognitive change</b><p>What I know, understand and think.</p></div>
+<div class="dim d2"><span class="n">2</span><b>Attitudinal and emotional change</b><p>What I value, feel, appreciate or become more conscious of.</p></div>
+<div class="dim d3"><span class="n">3</span><b>Behavioural change</b><p>What I do, practise or respond differently to.</p></div>
+</div>
+<div class="scale" aria-hidden="true"><span>begins quietly</span><i></i><span>visible in action</span></div>
+<p class="belief-line">Learning is not merely the acquisition of information. Sometimes the change is visible in our actions; sometimes it begins quietly in our thoughts, awareness and perspectives.</p>
+</section>
+
 <section id="bring">
 <h2>What I can bring</h2>
+<p style="margin:-12px 0 0;color:var(--muted)">Three threads run through my work.</p>
+<div class="th"><b>Knowledge</b><span>Researching, understanding, organising and simplifying information.</span></div>
 <div class="need"><b>Complex material made clear</b><span>Research, organising and plain-language explaining, from years of working with technical requirements and reports.</span></div>
+<div class="th"><b>People</b><span>Learning, accessibility, empathy and meaningful experiences.</span></div>
 <div class="need"><b>Learning with a path</b><span>Content shaped as hook, explain, apply, recap and act, written from the learner’s point of view.</span></div>
+<div class="th"><b>Creativity</b><span>Visual communication, digital content and independent projects.</span></div>
 <div class="need"><b>Visuals that carry the message</b><span>Infographics and carousels with clear hierarchy, made in Canva to a brand guideline.</span></div>
 <div class="need"><b>Simple digital learning pieces</b><span>Interactive browser pages in HTML, CSS and JavaScript, built with AI assistance.</span></div>
 <p class="learn">Learning now: how people learn and remember, how to design learning that works, and how to use AI as a helper while keeping human judgement in charge.</p>
+<p class="learn">Tools: Canva for carousels and infographics, GitHub Pages for publishing my own web projects, basic HTML, CSS and JavaScript with AI assistance, and AI tools for research and drafting, always checked by me.</p>
 </section>
 
 <section id="work">
