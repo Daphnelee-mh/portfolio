@@ -47,6 +47,7 @@ details[open] summary::after{content:"Close"}
 .row span{display:block;color:var(--muted);font-size:.92rem}.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:10px 0 12px;align-items:start}.ba .src{background:var(--beige);border-radius:12px;padding:14px 16px;font-size:.95rem}.ba .src b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.ba figure{margin:0}.ba img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}.ba figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}.th{margin:30px 0 0}.th b{font-family:Arial,Helvetica,sans-serif;font-size:.85rem}.th span{display:block;font-style:italic;color:var(--muted);font-size:1rem}
 .belief h2{font-size:clamp(1.5rem,4.5vw,2rem);max-width:24ch;margin-bottom:28px}.dims{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.dim{border:1.5px solid var(--ink);border-radius:16px;padding:20px 18px;background:var(--card)}.dim.d2{background:var(--beige)}.dim.d3{background:var(--ink);color:var(--bg)}.dim .n{display:inline-block;width:28px;height:28px;line-height:25px;text-align:center;border:1.5px solid currentColor;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.85rem;margin-bottom:10px}.dim b{display:block;font-weight:400;font-size:1.2rem;line-height:1.3;margin-bottom:6px}.dim p{margin:0;font-size:1rem;line-height:1.55}.scale{display:flex;align-items:center;gap:12px;margin:14px 2px 26px;font-family:Arial,Helvetica,sans-serif;font-size:.8rem;color:var(--muted)}.scale i{flex:1;border-top:1.5px solid var(--ink)}.belief-line{font-style:italic;color:var(--muted);max-width:52ch;margin:0}
 .nest{display:block;width:100%;max-width:440px;height:auto;margin:22px auto 10px}.nest circle{fill:var(--beige);fill-opacity:.4;stroke:var(--ink);stroke-width:1.2}.nest line{stroke:var(--ink);stroke-width:1.2}.nest path{fill:none}.nest text{fill:var(--ink);font-family:Arial,Helvetica,sans-serif}.nest .n{font-size:10px;font-weight:700}.nest .h{font-size:10.5px;font-weight:700}.nest .l{font-size:10.5px;text-anchor:middle}
+.car{margin:12px 0 18px}.car-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:10px}.car-track::-webkit-scrollbar{display:none}.car figure{flex:0 0 100%;margin:0;scroll-snap-align:center}.car a{display:block}.car img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line)}.car figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}.car-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;font-family:Arial,Helvetica,sans-serif;font-size:.85rem;color:var(--muted)}.car-nav button{font:inherit;font-weight:700;color:var(--ink);background:var(--card);border:1.5px solid var(--ink);border-radius:999px;display:inline-flex;align-items:center;height:40px;padding:0 18px;line-height:1;cursor:pointer}.car-nav button:disabled{opacity:.35;cursor:default}
 footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;text-align:center}
 </style>
 </head>
@@ -100,6 +101,7 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="need"><b>Complex material made clear</b><span>Research, organising and plain-language explaining, from years of working with technical requirements and reports.</span></div>
 <div class="th"><b>People</b><span>Learning, accessibility, empathy and meaningful experiences.</span></div>
 <div class="need"><b>Learning with a path</b><span>Content shaped as hook, explain, apply, recap and act, written from the learner’s point of view.</span></div>
+<div class="need"><b>Learning designed end to end</b><span>Objectives, activities, evidence and evaluation that line up, shown in the breathing workshop case study.</span></div>
 <div class="th"><b>Creativity</b><span>Visual communication, digital content and independent projects.</span></div>
 <div class="need"><b>Visuals that carry the message</b><span>Infographics and carousels with clear hierarchy, made in Canva to a brand guideline.</span></div>
 <div class="need"><b>Simple digital learning pieces</b><span>Interactive browser pages in HTML, CSS and JavaScript, built with AI assistance.</span></div>
@@ -111,7 +113,37 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <h2>Selected work</h2>
 
 <details open>
-<summary><small>Personal project</small><b>Breathing practices in the browser</b></summary>
+<summary><small>Instructional design project · designed, not yet delivered</small><b>Nothing More Than a Breath: a breathing awareness workshop</b></summary>
+<div class="body">
+<p>A 70-minute experiential workshop for an employee wellbeing programme, for office-based staff with no prior experience. I designed it from the learning need through to the evaluation plan. The delivery context is assumed: no organisation commissioned it.</p>
+<div class="car" role="region" aria-roledescription="carousel" aria-label="Case study slides">
+<div class="car-track" tabindex="0">
+<figure><a href="assets/breath/slide-01-cover.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-01-cover.jpg" width="1600" height="900" alt="Case study cover: Nothing More Than a Breath, a breathing awareness workshop for an office employee wellbeing programme, with layered waves settling into still water."></a><figcaption>1 · The project</figcaption></figure>
+<figure><a href="assets/breath/slide-02-approach.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-02-approach.jpg" width="1600" height="900" loading="lazy" alt="Instructional approach: five stages, Notice, Explore, Understand, Experiment and Apply, with Understand highlighted because it explains what participants have just experienced."></a><figcaption>2 · Experience before explanation</figcaption></figure>
+<figure><a href="assets/breath/slide-03-breathing.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-03-breathing.jpg" width="1600" height="900" loading="lazy" alt="How breathing works, in plain words: diagrams of breathing in, breathing out at rest and breathing while speaking, showing the diaphragm flattening and relaxing."></a><figcaption>3 · The science, kept simple</figcaption></figure>
+<figure><a href="assets/breath/slide-04-activity.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-04-activity.jpg" width="1600" height="900" loading="lazy" alt="Signature activity, Same Words, Different Rhythm: pairs read one passage three ways, In a Rush, Bedtime Story and Presenting at Work."></a><figcaption>4 · The signature activity</figcaption></figure>
+<figure><a href="assets/breath/slide-05-habits.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-05-habits.jpg" width="1600" height="900" loading="lazy" alt="Reminders that make the pause easy to take: the office poster and die-cut stickers for each employee, mapped to the four laws of behaviour change."></a><figcaption>5 · Stickers and poster</figcaption></figure>
+<figure><a href="assets/breath/slide-06-alignment.jpg" target="_blank" rel="noopener"><img src="assets/breath/slide-06-alignment.jpg" width="1600" height="900" loading="lazy" alt="Constructive alignment table: each of the five objectives matched to a learning activity and to evidence of learning."></a><figcaption>6 · Alignment</figcaption></figure>
+</div>
+<p style="margin:6px 0 0;font-size:.85rem;color:var(--muted)">Tap a slide to open it full size.</p>
+<div class="car-nav"><button type="button" class="car-prev" aria-label="Previous slide">Previous</button><span class="car-count" aria-live="polite">1 / 6</span><button type="button" class="car-next" aria-label="Next slide">Next</button></div>
+</div>
+<h3>The need</h3>
+<p>An awareness and habit gap, not a clinical one: knowing how breathing works, noticing it without trying to change it, and having a realistic cue to pause during the working day.</p>
+<h3>Design decisions</h3>
+<ul><li>Experience before explanation: Notice, Explore, Understand, Experiment, Apply, so the science explains what people have just noticed.</li><li>Five measurable objectives, each matched to an activity and to evidence of learning.</li><li>A role-play activity, Same Words, Different Rhythm: one passage read three ways, to notice how speech and breath change together.</li><li>Breathing content checked against published sources. Checking also caught an inaccurate claim in my own facilitator script, which I corrected.</li><li>Every activity optional, with no breath-holds and no health promises.</li></ul>
+<h3>Beyond the room</h3>
+<p>Die-cut stickers for each employee and a poster for the office, designed with the four laws of behaviour change from Atomic Habits, plus a written “after I…, I will…” plan for each participant.</p>
+<h3>Evaluation</h3>
+<p>Planned across Kirkpatrick Levels 1 to 3. There are no results yet, because the workshop has not been delivered.</p>
+<h3>Process</h3>
+<p>AI-assisted, human-led. The concept, audience, metaphor and design decisions are mine.</p>
+<p><a href="https://claude.ai/artifact/Lim6qcihcsz4HcQcqQkozL" target="_blank" rel="noopener">View the case study (slides)</a></p>
+</div>
+</details>
+
+<details>
+<summary><small>Personal project</small><b>Interactive breathing learning experience</b></summary>
 <div class="body">
 <p>Two guided pages, <a href="https://daphneinyoga.com/practices/box-breathing.html" target="_blank" rel="noopener">Box Breathing</a> and <a href="https://daphneinyoga.com/practices/437-breathing.html" target="_blank" rel="noopener">4-3-7 Breathing</a>, for beginners who want to try a practice without an app.</p>
 <h3>Design decisions</h3>
@@ -152,6 +184,7 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <h2>Background</h2>
 <div class="row"><b>ESD Designer / Engineer, BSD Consultancy</b><span>February 2025 to September 2026</span></div>
 <div class="row"><b>Green Building Assistant Consultant, Allied Environmental Consultants</b><span>November 2023 to February 2025</span></div>
+<div class="row"><b>Yoga instructor (freelance), RYT-200</b><span>September 2025 to present</span></div>
 <div class="row"><b>Volunteer media team, ProjekWaste</b></div>
 <div class="row"><b>BEng Civil Engineering, Harbin Institute of Technology</b><span>GPA 3.76/4.0</span></div>
 </section>
@@ -164,5 +197,30 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 
 <footer>© Daphne Lee. A work in progress.</footer>
 </main>
+<script>
+document.querySelectorAll('.car').forEach(function (car) {
+  var track = car.querySelector('.car-track');
+  var slides = track.children;
+  var prev = car.querySelector('.car-prev');
+  var next = car.querySelector('.car-next');
+  var count = car.querySelector('.car-count');
+  function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+  function update() {
+    var i = current();
+    count.textContent = (i + 1) + ' / ' + slides.length;
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  function go(step) { track.scrollTo({ left: (current() + step) * track.clientWidth }); }
+  prev.addEventListener('click', function () { go(-1); });
+  next.addEventListener('click', function () { go(1); });
+  track.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+  });
+  track.addEventListener('scroll', function () { window.requestAnimationFrame(update); });
+  update();
+});
+</script>
 </body>
 </html>
