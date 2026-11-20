@@ -59,10 +59,31 @@ details[open] summary::after{content:"Close"}
 .belief h2{font-size:clamp(1.6rem,4.8vw,2rem);max-width:24ch;margin-bottom:28px}.dims{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.dim{border:1px solid var(--ink);border-radius:16px;padding:20px 18px;background:var(--card)}.dim.d2{background:var(--beige)}.dim.d3{background:var(--ink);color:#fff}.dim .n{display:inline-block;width:28px;height:28px;line-height:25px;text-align:center;border:1.5px solid currentColor;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.9rem;margin-bottom:10px}.dim b{display:block;font-weight:400;font-size:1.25rem;line-height:1.3;margin-bottom:6px}.dim p{margin:0;font-size:1.0625rem;line-height:1.6}.scale{display:flex;align-items:center;gap:12px;margin:14px 2px 26px;font-family:Arial,Helvetica,sans-serif;font-size:.9rem;color:var(--muted)}.scale i{flex:1;border-top:1.5px solid var(--ink)}.belief-line{color:var(--muted);max-width:52ch;margin:0}
 .nest{display:block;width:100%;max-width:440px;height:auto;margin:22px auto 10px}.nest circle{fill:var(--beige);fill-opacity:.55;stroke:var(--ink);stroke-width:1.2}.nest line{stroke:var(--soft);stroke-width:1}.nest path{fill:none}.nest text{fill:var(--ink);font-family:Arial,Helvetica,sans-serif}.nest .n{font-size:11px;font-weight:700}.nest .h{font-size:11px;font-weight:700}.nest .l{font-size:11.5px;text-anchor:middle}
 .car{margin:14px 0 18px}.car-stage img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);cursor:zoom-in}.car-stage img[hidden]{display:none}.car-cap{margin:8px 0 0;color:var(--muted);font-size:1rem}.car-hint{margin:2px 0 12px;color:var(--muted);font-size:.95rem}.car-nav{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-family:Arial,Helvetica,sans-serif;font-size:1rem}.car-nav button,#carBig button{font-family:Arial,Helvetica,sans-serif;font-size:1rem;font-weight:700;padding:8px 20px;border:1.5px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);cursor:pointer}.car-nav button:hover:not(:disabled),#carBig button:hover{background:var(--ink);color:var(--bg)}.car-nav button:disabled{opacity:.35;cursor:default}#carBig{border:0;padding:12px;border-radius:14px;max-width:min(96vw,1200px);background:var(--bg)}#carBig img{display:block;width:100%;height:auto;border-radius:8px}#carBig form{text-align:center;margin-top:10px}#carBig::backdrop{background:rgba(26,26,26,.7)}
+
+/* motion: scroll reveal, section index, big contact link. All off for reduced motion. */
+h2{font-size:clamp(2rem,5.5vw,2.7rem);letter-spacing:-.02em}
+.belief h2{font-size:clamp(1.6rem,4.8vw,2rem);letter-spacing:-.01em}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.side{display:none;position:fixed;right:32px;top:50%;transform:translateY(-50%);z-index:5;font-family:Arial,Helvetica,sans-serif;font-size:.8rem;letter-spacing:.06em}
+.side a{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:7px 0;color:var(--muted);text-decoration:none;transition:color .3s}
+.side a i{display:block;width:14px;height:1px;background:currentColor;transition:width .4s cubic-bezier(.2,.7,.2,1)}
+.side a span{opacity:0;transform:translateX(6px);transition:opacity .3s,transform .3s;text-transform:uppercase}
+.side a.on{color:var(--ink)}
+.side a.on i{width:34px}
+.side a.on span,.side:hover a span{opacity:1;transform:none}
+@media (min-width:1200px){.side{display:block}}
+#contact h2{font-size:clamp(2.8rem,10vw,5.2rem);line-height:1.02;letter-spacing:-.03em;margin-bottom:28px}
+.big-link{display:inline-block;margin-top:22px;font-size:clamp(1.4rem,4.5vw,2rem);color:var(--ink);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:4px;transition:background-size .5s cubic-bezier(.2,.7,.2,1)}
+.big-link span{display:inline-block;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.big-link:hover{background-size:0 2px;background-position:100% 100%}
+.big-link:hover span{transform:translate(4px,-4px)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.side a,.side a i,.side a span,.big-link,.big-link span{transition:none}.big-link:hover{background-size:100% 2px}}
 footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:1rem;text-align:center}
 </style>
 </head>
 <body>
+<div class="side" aria-hidden="true"><a href="#belief" tabindex="-1" data-s="belief"><span>How I think</span><i></i>01</a><a href="#bring" tabindex="-1" data-s="bring"><span>What I bring</span><i></i>02</a><a href="#work" tabindex="-1" data-s="work"><span>Work</span><i></i>03</a><a href="#background" tabindex="-1" data-s="background"><span>Background</span><i></i>04</a><a href="#contact" tabindex="-1" data-s="contact"><span>Contact</span><i></i>05</a></div>
 <nav aria-label="Main"><b>Daphne Lee</b><a href="#belief">How I think</a><a href="#bring">What I bring</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
 <main>
 
@@ -240,11 +261,23 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <section id="contact">
 <h2>Let’s talk</h2>
 <p>Open to learning and experience design, digital learning content and visual communication roles, and to freelance educational content.</p>
-<a class="btn" href="https://www.linkedin.com/in/daphneleemh/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+<a class="big-link" href="https://www.linkedin.com/in/daphneleemh/" target="_blank" rel="noopener">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
 </section>
 
 <footer>© Daphne Lee. A work in progress.</footer>
 </main>
+<script>
+(function(){
+document.documentElement.classList.add("js");
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var els=[].slice.call(document.querySelectorAll("section h2,.dim,.scale,.belief-line,.th,.need,.row,section details,#contact p,#contact .big-link,.nest"));
+els.forEach(function(e,i){e.classList.add("rv");var sib=e.parentNode.querySelectorAll(":scope > .rv");var k=[].indexOf.call(sib,e);e.style.setProperty("--d",Math.min(k,4)*0.08+"s")});
+if(reduce||!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});}
+else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.05});els.forEach(function(e){io.observe(e)});}
+var links=[].slice.call(document.querySelectorAll(".side a"));
+if("IntersectionObserver" in window){var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle("on",l.dataset.s===x.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});["belief","bring","work","background","contact"].forEach(function(id){var t=document.getElementById(id);if(t)so.observe(t)});}
+})();
+</script>
 <script>
 (function(){var im=[].slice.call(document.querySelectorAll(".cs")),n=0,p=document.getElementById("carPrev"),x=document.getElementById("carNext"),c=document.getElementById("carCount"),cap=document.getElementById("carCap"),d=document.getElementById("carBig");
 function show(i){n=i;im.forEach(function(e,k){e.hidden=k!==i});c.textContent=(i+1)+" / "+im.length;cap.textContent=im[i].dataset.cap;p.disabled=i===0;x.disabled=i===im.length-1}
