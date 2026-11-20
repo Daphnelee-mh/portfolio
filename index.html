@@ -91,8 +91,8 @@ h2{font-size:clamp(2rem,5.5vw,2.7rem);letter-spacing:-.02em}
 .nest.go .c1{animation-delay:1s}.nest.go .lv1{animation-delay:1.6s}
 .nest.go .c2{animation-delay:2s}.nest.go .lv2{animation-delay:2.6s}
 @media (prefers-reduced-motion:reduce){.nest.go .c,.nest.go .lv{animation:none}.js .nest .c,.js .nest .lv{opacity:1}}
-/* subtle paper texture: generated noise, no image file, static (no animation) */
-body{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .34  0 0 0 0 .24  .34 0 0 0 -.07'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");background-size:240px 240px}
+/* paper texture: seamless tile, cold-press feel; solid colour first so the page is fine if the image fails */
+body{background-color:#f6f2ea;background-image:url(assets/paper.jpg);background-size:700px 700px}
 footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:1rem;text-align:center}
 </style>
 </head>
