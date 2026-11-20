@@ -9,7 +9,7 @@
 <meta property="og:title" content="Daphne Lee | Learning &amp; Experience Design">
 <meta property="og:description" content="Daphne Lee turns complex information into clear, meaningful learning experiences: instructional design, digital learning content and visual communication.">
 <style>
-:root{--bg:#faf7f2;--ink:#1a1a1a;--muted:#6b6459;--soft:#8a8276;--line:#e2d9c9;--card:#fff;--beige:#efe6d8;--green:#398b78;--gold:#d5a45d;--sage:#9aafa8;
+:root{--bg:#faf7f2;--ink:#1a1a1a;--muted:#5a5348;--soft:#8a8276;--line:#e2d9c9;--card:#fff;--beige:#efe6d8;--green:#398b78;--gold:#d5a45d;--sage:#9aafa8;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
@@ -24,7 +24,7 @@ nav a:hover{text-decoration:underline}
 .hero{padding:56px 0 72px;text-align:center}
 .cc{margin:20px auto 0;max-width:560px}.cc svg{display:block;width:100%;height:auto;overflow:visible}
 .cc .particle{transform-box:fill-box;transform-origin:center}
-.cc .connection{fill:none;stroke:var(--sage);stroke-width:1.4;stroke-linecap:round;stroke-dasharray:180;stroke-dashoffset:180}
+.cc .connection{fill:none;stroke:#7f9a91;stroke-width:1.8;stroke-linecap:round;stroke-dasharray:180;stroke-dashoffset:180}
 .cc .node{fill:var(--green);opacity:0}
 .cc .core{fill:none;stroke:var(--green);stroke-width:1.5;transform-box:fill-box;transform-origin:center;opacity:0}
 .cc-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:14px;color:var(--muted);font-family:Arial,Helvetica,sans-serif;font-size:15px}
@@ -59,10 +59,45 @@ details[open] summary::after{content:"Close"}
 .belief h2{font-size:clamp(1.6rem,4.8vw,2rem);max-width:24ch;margin-bottom:28px}.dims{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.dim{border:1px solid var(--ink);border-radius:16px;padding:20px 18px;background:var(--card)}.dim.d2{background:var(--beige)}.dim.d3{background:var(--ink);color:#fff}.dim .n{display:inline-block;width:28px;height:28px;line-height:25px;text-align:center;border:1.5px solid currentColor;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.9rem;margin-bottom:10px}.dim b{display:block;font-weight:400;font-size:1.25rem;line-height:1.3;margin-bottom:6px}.dim p{margin:0;font-size:1.0625rem;line-height:1.6}.scale{display:flex;align-items:center;gap:12px;margin:14px 2px 26px;font-family:Arial,Helvetica,sans-serif;font-size:.9rem;color:var(--muted)}.scale i{flex:1;border-top:1.5px solid var(--ink)}.belief-line{color:var(--muted);max-width:52ch;margin:0}
 .nest{display:block;width:100%;max-width:440px;height:auto;margin:22px auto 10px}.nest circle{fill:var(--beige);fill-opacity:.55;stroke:var(--ink);stroke-width:1.2}.nest line{stroke:var(--soft);stroke-width:1}.nest path{fill:none}.nest text{fill:var(--ink);font-family:Arial,Helvetica,sans-serif}.nest .n{font-size:11px;font-weight:700}.nest .h{font-size:11px;font-weight:700}.nest .l{font-size:11.5px;text-anchor:middle}
 .car{margin:14px 0 18px}.car-stage img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);cursor:zoom-in}.car-stage img[hidden]{display:none}.car-cap{margin:8px 0 0;color:var(--muted);font-size:1rem}.car-hint{margin:2px 0 12px;color:var(--muted);font-size:.95rem}.car-nav{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-family:Arial,Helvetica,sans-serif;font-size:1rem}.car-nav button,#carBig button{font-family:Arial,Helvetica,sans-serif;font-size:1rem;font-weight:700;padding:8px 20px;border:1.5px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);cursor:pointer}.car-nav button:hover:not(:disabled),#carBig button:hover{background:var(--ink);color:var(--bg)}.car-nav button:disabled{opacity:.35;cursor:default}#carBig{border:0;padding:12px;border-radius:14px;max-width:min(96vw,1200px);background:var(--bg)}#carBig img{display:block;width:100%;height:auto;border-radius:8px}#carBig form{text-align:center;margin-top:10px}#carBig::backdrop{background:rgba(26,26,26,.7)}
+
+/* motion: scroll reveal, section index, big contact link. All off for reduced motion. */
+h2{font-size:clamp(2rem,5.5vw,2.7rem);letter-spacing:-.02em}
+.belief h2{font-size:clamp(1.6rem,4.8vw,2rem);letter-spacing:-.01em}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.side{display:none;position:fixed;right:32px;top:50%;transform:translateY(-50%);z-index:5;font-family:Arial,Helvetica,sans-serif;font-size:.8rem;letter-spacing:.06em}
+.side a{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:7px 0;color:var(--muted);text-decoration:none;transition:color .3s}
+.side a i{display:block;width:14px;height:1px;background:currentColor;transition:width .4s cubic-bezier(.2,.7,.2,1)}
+.side a span{opacity:0;transform:translateX(6px);transition:opacity .3s,transform .3s;text-transform:uppercase}
+.side a.on{color:var(--ink)}
+.side a.on i{width:34px}
+.side a.on span,.side:hover a span{opacity:1;transform:none}
+@media (min-width:1200px){.side{display:block}}
+#contact h2{font-size:clamp(2.8rem,10vw,5.2rem);line-height:1.02;letter-spacing:-.03em;margin-bottom:28px}
+.big-link{display:inline-block;margin-top:22px;font-size:clamp(1.4rem,4.5vw,2rem);color:var(--ink);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:4px;transition:background-size .5s cubic-bezier(.2,.7,.2,1)}
+.big-link span{display:inline-block;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.big-link:hover{background-size:0 2px;background-position:100% 100%}
+.big-link:hover span{transform:translate(4px,-4px)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.side a,.side a i,.side a span,.big-link,.big-link span{transition:none}.big-link:hover{background-size:100% 2px}}
+
+/* nested circles: knowledge first, people wraps around it, then creativity */
+.nest .c{transform-box:view-box;transform-origin:14px 212px}
+.js .nest:not(.go) .c,.js .nest:not(.go) .lv{opacity:0}
+@keyframes nestGrow{from{opacity:0;transform:scale(.45)}to{opacity:1;transform:none}}
+@keyframes nestFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.nest.go .c{animation:nestGrow .9s cubic-bezier(.2,.7,.2,1) both}
+.nest.go .lv{animation:nestFade .6s ease both}
+.nest.go .c0{animation-delay:0s}.nest.go .lv0{animation-delay:.6s}
+.nest.go .c1{animation-delay:1s}.nest.go .lv1{animation-delay:1.6s}
+.nest.go .c2{animation-delay:2s}.nest.go .lv2{animation-delay:2.6s}
+@media (prefers-reduced-motion:reduce){.nest.go .c,.nest.go .lv{animation:none}.js .nest .c,.js .nest .lv{opacity:1}}
+/* paper texture: seamless tile, cold-press feel; solid colour first so the page is fine if the image fails */
+body{background-color:#f6f2ea;background-image:url(assets/paper.jpg);background-size:700px 700px}
 footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:1rem;text-align:center}
 </style>
 </head>
 <body>
+<div class="side" aria-hidden="true"><a href="#belief" tabindex="-1" data-s="belief"><span>How I think</span><i></i>01</a><a href="#bring" tabindex="-1" data-s="bring"><span>What I bring</span><i></i>02</a><a href="#work" tabindex="-1" data-s="work"><span>Work</span><i></i>03</a><a href="#background" tabindex="-1" data-s="background"><span>Background</span><i></i>04</a><a href="#contact" tabindex="-1" data-s="contact"><span>Contact</span><i></i>05</a></div>
 <nav aria-label="Main"><b>Daphne Lee</b><a href="#belief">How I think</a><a href="#bring">What I bring</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
 <main>
 
@@ -128,24 +163,24 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <p style="margin:-12px 0 0;color:var(--muted)">Three threads run through my work.</p>
 <svg class="nest" viewBox="0 0 280 346" role="img" aria-labelledby="nt nd" xmlns="http://www.w3.org/2000/svg">
 <title id="nt">Knowledge, people and creativity as three nested circles</title><desc id="nd">Knowledge sits at the centre, held within people, held within creativity.</desc>
-<circle cx="140" cy="212" r="126"/>
-<circle cx="100" cy="212" r="86"/>
-<circle cx="60" cy="212" r="46"/>
-<line x1="106" y1="4" x2="106" y2="212"/>
+<circle class="c c2" cx="140" cy="212" r="126"/>
+<circle class="c c1" cx="100" cy="212" r="86"/>
+<circle class="c c0" cx="60" cy="212" r="46"/>
+<g class="lv lv0"><line x1="106" y1="4" x2="106" y2="212"/>
 <text x="101" y="14" text-anchor="end" class="n">01</text>
 <text x="101" y="27" text-anchor="end" class="h">KNOWLEDGE</text>
 <path id="a0" d="M14 212 A46 46 0 0 0 106 212" fill="none"/>
-<text class="l"><textPath href="#a0" startOffset="50%">Understanding</textPath></text>
-<line x1="186" y1="4" x2="186" y2="212"/>
+<text class="l"><textPath href="#a0" startOffset="50%">Understanding</textPath></text></g>
+<g class="lv lv1"><line x1="186" y1="4" x2="186" y2="212"/>
 <text x="181" y="14" text-anchor="end" class="n">02</text>
 <text x="181" y="27" text-anchor="end" class="h">PEOPLE</text>
 <path id="a1" d="M14 212 A86 86 0 0 0 186 212" fill="none"/>
-<text class="l"><textPath href="#a1" startOffset="50%">Meaningful experiences</textPath></text>
-<line x1="266" y1="4" x2="266" y2="212"/>
+<text class="l"><textPath href="#a1" startOffset="50%">Meaningful experiences</textPath></text></g>
+<g class="lv lv2"><line x1="266" y1="4" x2="266" y2="212"/>
 <text x="261" y="14" text-anchor="end" class="n">03</text>
 <text x="261" y="27" text-anchor="end" class="h">CREATIVITY</text>
 <path id="a2" d="M14 212 A126 126 0 0 0 266 212" fill="none"/>
-<text class="l"><textPath href="#a2" startOffset="50%">Visual communication</textPath></text>
+<text class="l"><textPath href="#a2" startOffset="50%">Visual communication</textPath></text></g>
 </svg>
 <div class="th"><b>Knowledge</b><span>Researching, understanding, organising and simplifying information.</span></div>
 <div class="need"><b>Complex material made clear</b><span>Research, organising and plain-language explaining, from years of working with technical requirements and reports.</span></div>
@@ -155,7 +190,11 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <div class="need"><b>Visuals that carry the message</b><span>Infographics and carousels with clear hierarchy, made in Canva to a brand guideline.</span></div>
 <div class="need"><b>Simple digital learning pieces</b><span>Interactive browser pages in HTML, CSS and JavaScript, built with AI assistance.</span></div>
 <p class="learn">Learning now: how people learn and remember, how to design learning that works, and how to use AI as a helper while keeping human judgement in charge.</p>
-<p class="learn">Tools: Canva for carousels and infographics, GitHub Pages for publishing my own web projects, basic HTML, CSS and JavaScript with AI assistance, and AI tools for research and drafting, always checked by me.</p>
+<div class="th"><b>Tools I use</b></div>
+<div class="need"><b>Canva</b><span>Carousels, infographics and slide visuals.</span></div>
+<div class="need"><b>PowerPoint and Microsoft 365</b><span>Presentations and documents.</span></div>
+<div class="need"><b>HTML, CSS and JavaScript (basic)</b><span>Small interactive learning pages, built with AI assistance and published on GitHub Pages.</span></div>
+<div class="need"><b>AI tools</b><span>Research and first drafts. I check the sources and make the decisions.</span></div>
 </section>
 
 <section id="work">
@@ -228,7 +267,7 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <h2>Background</h2>
 <div class="row"><b>ESD Engineer, BSD Consultancy</b><span>December 2025 to September 2026</span><span>Researched certification requirements and turned them into structured documentation. Presented to clients and design teams at kick-off meetings and guided project teams through what the documentation needed.</span></div>
 <div class="row"><b>Green Building Assistant Consultant, Allied Environmental Consultants</b><span>November 2023 to February 2025</span><span>Supported green building certification projects. Researched requirements, organised supporting documents and helped turn them into clear project deliverables.</span></div>
-<div class="row"><b>Yoga teacher, freelance</b><span>September 2025 to present</span><span>Weekly beginner-friendly Hatha and Vinyasa group classes: giving clear instructions, adapting to different levels and guiding people through a step-by-step experience.</span></div>
+<div class="row"><b>Yoga teacher, freelance</b><span>September 2025 to present</span><span>Teaching Hatha and Vinyasa, honouring different bodies and building body and mind awareness.</span></div>
 <div class="row"><b>Volunteer media team, ProjekWaste</b><span>April 2025 to present</span><span>Content and visual communication for sustainability awareness posts.</span></div>
 <div class="row"><b>BEng Civil Engineering, Harbin Institute of Technology</b><span>GPA 3.76/4.0</span></div>
 </section>
@@ -236,11 +275,25 @@ footer{padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);f
 <section id="contact">
 <h2>Let’s talk</h2>
 <p>Open to learning and experience design, digital learning content and visual communication roles, and to freelance educational content.</p>
-<a class="btn" href="https://www.linkedin.com/in/daphneleemh/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+<a class="big-link" href="https://www.linkedin.com/in/daphneleemh/" target="_blank" rel="noopener">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
 </section>
 
 <footer>© Daphne Lee. A work in progress.</footer>
 </main>
+<script>
+(function(){
+document.documentElement.classList.add("js");
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var els=[].slice.call(document.querySelectorAll("section h2,.dim,.scale,.belief-line,.th,.need,.row,section details,#contact p,#contact .big-link"));
+els.forEach(function(e,i){e.classList.add("rv");var sib=e.parentNode.querySelectorAll(":scope > .rv");var k=[].indexOf.call(sib,e);e.style.setProperty("--d",Math.min(k,4)*0.08+"s")});
+if(reduce||!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});}
+else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.05});els.forEach(function(e){io.observe(e)});}
+var nest=document.querySelector(".nest");
+if(nest){if(reduce||!("IntersectionObserver" in window)){nest.classList.add("go")}else{var no=new IntersectionObserver(function(en){if(en[0].isIntersecting){nest.classList.add("go");no.disconnect()}},{threshold:.5});no.observe(nest)}}
+var links=[].slice.call(document.querySelectorAll(".side a"));
+if("IntersectionObserver" in window){var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle("on",l.dataset.s===x.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});["belief","bring","work","background","contact"].forEach(function(id){var t=document.getElementById(id);if(t)so.observe(t)});}
+})();
+</script>
 <script>
 (function(){var im=[].slice.call(document.querySelectorAll(".cs")),n=0,p=document.getElementById("carPrev"),x=document.getElementById("carNext"),c=document.getElementById("carCount"),cap=document.getElementById("carCap"),d=document.getElementById("carBig");
 function show(i){n=i;im.forEach(function(e,k){e.hidden=k!==i});c.textContent=(i+1)+" / "+im.length;cap.textContent=im[i].dataset.cap;p.disabled=i===0;x.disabled=i===im.length-1}
